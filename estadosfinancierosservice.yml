@@ -1,8 +1,11 @@
 
-estadosfinancierosservice:
-  nombrepropiedad1:"hola"
-  nombrepropiedad2:"como estas"
-  nombrepropiedad3:"bienvenido propiedad desde git"
+estadosfinancieros:
+  nombrepropiedad1:
+    value: hola
+  nombrepropiedad2:
+    value: como estas
+  nombrepropiedad3:
+    value: bienvenido propiedad desde git
 
 
 spring:
