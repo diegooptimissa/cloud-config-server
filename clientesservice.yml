@@ -1,7 +1,6 @@
 clientesservice:
-    nombrepropiedad1:hola
-    nombrepropiedad2:como estas,
-    nombrepropiedad3:bienvenido, propiedad desde git
+    consultaclientes:
+        wsdlLocation: http://192.168.21.161:8081/mockAnalisisRiesgos/services/mockAnalisisRiesgos?wsdl
 
 spring:
   jpa:
