@@ -15,15 +15,12 @@ spring:
     show-sql: "true"
     properties:
       hibernate:
-        dialect: "org.hibernate.dialect.MySQL5Dialect"
-  database:
-    driverClassName: "com.mysql.jdbc.Driver"
+        dialect: "org.hibernate.dialect.Oracle10gDialect"
   datasource:
-    url: "jdbc:mysql://localhost:3306/test_db"
-    username: "root"
-    password: "Admin123"
-    testWhileIdle: "true"
-    validationQuery: "SELECT 1"
+    url: "jdbc:oracle:thin:@192.168.21.161:1523:xe"
+    username: "adminriesgos"
+    password: "Optipwd1"
+    driver-class-name: "oracle.jdbc.OracleDriver"
     
 eureka:
   instance:
