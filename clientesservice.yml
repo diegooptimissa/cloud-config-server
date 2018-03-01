@@ -14,11 +14,4 @@ spring:
     password: "Optipwd1"
     driver-class-name: "oracle.jdbc.OracleDriver"
     
-eureka:
-  instance:
-    preferIpAddress: true
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://192.168.21.191:30761/eureka
+
