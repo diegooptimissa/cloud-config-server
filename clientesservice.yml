@@ -15,3 +15,11 @@ spring:
     driver-class-name: "oracle.jdbc.OracleDriver"
     
 
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://192.168.21.100:8761/eureka

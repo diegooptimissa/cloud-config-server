@@ -1,15 +1,4 @@
 
-estadosfinancieros:
-  nombrepropiedad1:
-    value: hola
-  nombrepropiedad2:
-    value: como estas
-  nombrepropiedad3:
-    value: bienvenido propiedad desde git
-
-estadosfinancierosservice:
-    consultaestadosfinancieros:
-        wsdlLocation: http://192.168.21.100:8081/mockAnalisisRiesgos/services/mockAnalisisRiesgos?wsdl
 
 spring:
   jpa:
@@ -23,6 +12,7 @@ spring:
     password: "Optipwd1"
     driver-class-name: "oracle.jdbc.OracleDriver"
     
+
 eureka:
   instance:
     preferIpAddress: true
@@ -31,4 +21,3 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://192.168.21.100:8761/eureka
-      
