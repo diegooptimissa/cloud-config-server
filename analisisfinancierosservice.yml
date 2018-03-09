@@ -6,7 +6,8 @@ analisisfinancieros:
     value: como estas
   nombrepropiedad3:
     value: bienvenido propiedad desde git
-
+  consultadetalleestadosfinancieros:
+        wsdlLocation: http://192.168.21.100:8081/mockAnalisisRiesgos/services/mockAnalisisRiesgos?wsdl
 
 spring:
   jpa:
