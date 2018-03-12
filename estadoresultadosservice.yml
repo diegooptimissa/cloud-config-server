@@ -1,0 +1,21 @@
+spring:
+  jpa:
+    show-sql: "true"
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.Oracle10gDialect"
+        format_sql: "true"
+  datasource:
+    url: "jdbc:oracle:thin:@192.168.21.100:1523:xe"
+    username: "adminriesgos"
+    password: "Optipwd1"
+    driver-class-name: "oracle.jdbc.OracleDriver"
+    
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://192.168.21.100:8761/eureka
