@@ -1,6 +1,6 @@
 clientesservice:
     consultaclientes:
-        wsdlLocation: http://192.168.21.100:8080/mockAnalisisRiesgos/services/mockAnalisisRiesgos?wsdl
+        wsdlLocation: http://192.168.21.100:8081/mockAnalisisRiesgos/services/mockAnalisisRiesgos?wsdl
 
 spring:
   jpa:
