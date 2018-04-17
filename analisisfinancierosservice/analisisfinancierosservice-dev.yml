@@ -1,17 +1,12 @@
-
-estadosfinancieros:
-  nombrepropiedad1:
-    value: hola
-  nombrepropiedad2:
-    value: como estas
-  nombrepropiedad3:
-    value: bienvenido propiedad desde git
-
-estadosfinancierosservice:
-    consultaestadosfinancieros:
-        wsdlLocation: http://192.168.21.100:8081/mockAnalisisRiesgos/services/mockAnalisisRiesgos?wsdl
-
+##################################################################
+#
+# Service: analisisfinancierosservice
+# Environment: Development (DEV)
+# 
+##################################################################
 spring:
+  application:
+    name: analisisfinancierosservice
   jpa:
     show-sql: "true"
     properties:
@@ -22,7 +17,11 @@ spring:
     username: "adminriesgos"
     password: "Optipwd1"
     driver-class-name: "oracle.jdbc.OracleDriver"
-    
+        
+   
+server:
+  port: 8002
+  
 eureka:
   instance:
     preferIpAddress: true
@@ -30,5 +29,5 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://192.168.21.100:8761/eureka
+      defaultZone: http://localhost:8761/eureka
       

@@ -1,4 +1,18 @@
+##################################################################
+#
+# Service: estadoresultadoservice
+# Environment: Development (DEV)
+# 
+##################################################################
+estadoresultadoservice:
+  repository:
+    ormFile: orm.xml
+server:
+  port: 8003
+
 spring:
+  application:
+    name: estadoresultadosservice
   jpa:
     show-sql: "true"
     properties:
@@ -18,4 +32,4 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://192.168.21.100:8761/eureka
+      defaultZone: http://localhost:8761/eureka
