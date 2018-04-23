@@ -4,6 +4,9 @@
 # Environment: Development (DEV)
 # 
 ##################################################################
+consultadetalleestadosfinancieros:
+  wsdlLocation: http://192.168.21.100:8081/mockAnalisisRiesgos/services/mockAnalisisRiesgos?wsdl
+
 spring:
   application:
     name: analisisfinancierosservice
