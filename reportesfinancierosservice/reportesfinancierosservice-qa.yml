@@ -17,9 +17,9 @@ spring:
       hibernate:
         dialect: "org.hibernate.dialect.Oracle10gDialect"
   datasource:
-    url: "jdbc:oracle:thin:@192.168.21.100:1523:xe"
-    username: "adminriesgos"
-    password: "Optipwd1"
+    url: "jdbc:oracle:thin:@192.168.21.100:1523:sirtest"
+    username: "c##testing"
+    password: "testing1"
     driver-class-name: "oracle.jdbc.OracleDriver"
 
 
