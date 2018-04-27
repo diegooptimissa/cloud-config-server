@@ -7,7 +7,7 @@
 
 clientesservice:
     consultaclientes:
-        wsdlLocation: http://192.168.21.100:8081/mockAnalisisRiesgos/services/mockAnalisisRiesgos?wsdl
+        wsdlLocation: http://192.168.21.192:8081/mockAnalisisRiesgos/services/mockAnalisisRiesgos?wsdl
 server:
   port: 8000
   
@@ -20,7 +20,7 @@ spring:
       hibernate:
         dialect: "org.hibernate.dialect.Oracle10gDialect"
   datasource:
-    url: "jdbc:oracle:thin:@192.168.21.100:1523:sirtest"
+    url: "jdbc:oracle:thin:@192.168.21.192:1523:sirtest"
     username: "c##testing"
     password: "testing1"
     driver-class-name: "oracle.jdbc.OracleDriver"
@@ -33,4 +33,4 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://192.168.21.100:8761/eureka
+      defaultZone: http://192.168.21.192:8761/eureka

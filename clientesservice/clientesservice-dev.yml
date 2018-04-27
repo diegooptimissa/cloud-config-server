@@ -7,7 +7,7 @@
 
 clientesservice:
     consultaclientes:
-        wsdlLocation: http://192.168.21.100:8081/mockAnalisisRiesgos/services/mockAnalisisRiesgos?wsdl
+        wsdlLocation: http://192.168.21.192:8081/mockAnalisisRiesgos/services/mockAnalisisRiesgos?wsdl
 server:
   port: 8000
 
@@ -20,7 +20,7 @@ spring:
       hibernate:
         dialect: "org.hibernate.dialect.Oracle10gDialect"
   datasource:
-    url: "jdbc:oracle:thin:@192.168.21.100:1523:xe"
+    url: "jdbc:oracle:thin:@192.168.21.192:1523:xe"
     username: "adminriesgos"
     password: "Optipwd1"
     driver-class-name: "oracle.jdbc.OracleDriver"

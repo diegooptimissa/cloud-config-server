@@ -5,7 +5,7 @@
 # 
 ##################################################################
 consultadetalleestadosfinancieros:
-  wsdlLocation: http://192.168.21.100:8081/mockAnalisisRiesgos/services/mockAnalisisRiesgos?wsdl
+  wsdlLocation: http://192.168.21.192:8081/mockAnalisisRiesgos/services/mockAnalisisRiesgos?wsdl
 
 spring:
   application:
@@ -16,7 +16,7 @@ spring:
       hibernate:
         dialect: "org.hibernate.dialect.Oracle10gDialect"
   datasource:
-    url: "jdbc:oracle:thin:@192.168.21.100:1523:sirProduccio"
+    url: "jdbc:oracle:thin:@192.168.21.192:1523:sirProduccio"
     username: "c##produccion"
     password: "testing12"
     driver-class-name: "oracle.jdbc.OracleDriver"
