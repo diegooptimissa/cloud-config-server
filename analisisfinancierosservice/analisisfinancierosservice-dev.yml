@@ -27,7 +27,7 @@ spring:
         
    
 server:
-  port: 8006
+  port: 8002
   
 eureka:
   instance:
