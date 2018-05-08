@@ -5,9 +5,8 @@
 # 
 ##################################################################
 
-notasservice:
-  repository:
-    ormFile: orm.xml
+repository:
+  ormFile: orm.xml
 server:
   port: 8006
   
