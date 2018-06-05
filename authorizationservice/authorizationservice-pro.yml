@@ -1,17 +1,18 @@
 ##################################################################
 #
-# Service: authorizationservice
-# Environment: Development (DEV)
-#
+# Service: notasservice
+# Environment: Production (PRO)
+# 
 ##################################################################
 
-  
 repository:
   ormFile: orm.xml
 server:
   port: 8007
-
+  
 spring:
+  application:
+    name: authorizationservice
   jpa:
     show-sql: "true"
     properties:
@@ -22,7 +23,7 @@ spring:
     username: "sirProd"
     password: "sirProd1"
     driver-class-name: "oracle.jdbc.OracleDriver"
-
+    
 
 eureka:
   instance:
@@ -31,4 +32,4 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://192.168.21.192:8761/eureka
