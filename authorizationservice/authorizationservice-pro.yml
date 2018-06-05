@@ -44,7 +44,5 @@ ldap:
   user:
     dn:
       pattern: uid={0}
-signing:
-  key: 345345fsdgsf5345
 
   
