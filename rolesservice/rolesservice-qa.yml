@@ -1,0 +1,36 @@
+##################################################################
+#
+# Service: rolesservice
+# Environment: Testing (QA)
+# 
+##################################################################
+
+rolesservice:
+  repository:
+    ormFile: orm.xml
+server:
+  port: 8007
+  
+spring:
+  application:
+    name: rolesservice
+  jpa:
+    show-sql: "true"
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.Oracle10gDialect"
+  datasource:
+    url: "jdbc:oracle:thin:@192.168.21.192:1523:sirtest"
+    username: "c##testing"
+    password: "testing1"
+    driver-class-name: "oracle.jdbc.OracleDriver"
+    
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://192.168.21.192:8761/eureka
