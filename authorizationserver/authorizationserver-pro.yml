@@ -44,3 +44,4 @@ ldap:
   user-dn-patterns: "uid={0}"
   group-search-base:
   group-search-filter: "(uniqueMember={0})"
+  
