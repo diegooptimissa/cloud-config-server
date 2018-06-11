@@ -33,18 +33,9 @@ eureka:
       defaultZone: http://localhost:8761/eureka
       
 security:
-  user:
-    password: password
   oauth2:
     resource:
       filter-order: 3
-    client:
-      accessTokenUri: http://localhost:8901/oauth/token
-      userAuthorizationUri: http://localhost:8901/oauth/authorize
-      clientId: appriesgos-client
-      clientSecret: appriesgos-secret
-    resource:
-      userInfoUri: http://localhost:8901/users/user
 
 ldap:
   url: "ldap://ldap.forumsys.com:389/dc=example,dc=com"
