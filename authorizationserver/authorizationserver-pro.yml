@@ -38,7 +38,7 @@ security:
       filter-order: 3
 
 ldap:
-  url: "ldap://ldap.forumsys.com:389/dc=example,dc=com"
+  url: "ldap://192.168.21.192:389/dc=example,dc=com"
   ldif: "classpath:test.ldif"
   user-search-base:
   user-dn-patterns: "uid={0}"
