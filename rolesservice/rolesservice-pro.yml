@@ -11,8 +11,6 @@ server:
   port: 8007
   
 spring:
-  application:
-    name: rolesservice
   jpa:
     show-sql: "true"
     properties:
