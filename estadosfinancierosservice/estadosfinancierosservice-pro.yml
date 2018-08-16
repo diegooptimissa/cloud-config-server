@@ -4,6 +4,8 @@
 # Enviroment: Production (PRO)
 # 
 ##################################################################
+repository:
+  ormFile: orm.xml
 server:
   port: 8001
 

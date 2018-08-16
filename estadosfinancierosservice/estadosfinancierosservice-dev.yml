@@ -4,6 +4,8 @@
 # Enviroment: Development (DEV)
 # 
 ##################################################################
+repository:
+  ormFile: orm.xml
 server:
   port: 8001
 
