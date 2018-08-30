@@ -14,7 +14,7 @@ server:
 spring:
   jackson:
     time-zone: Mexico/General
-    locale: es-MX
+    date-format: dd/MM/yyyy
   application:
     name: clientesservice
   jpa:
