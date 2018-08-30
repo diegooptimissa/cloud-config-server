@@ -12,6 +12,9 @@ server:
   port: 8000
 
 spring:
+  jackson:
+    time-zone: Mexico/General
+    locale: es-MX
   application:
     name: clientesservice
   jpa:
