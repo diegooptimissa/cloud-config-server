@@ -4,6 +4,12 @@
 # Environment: Development (DEV)
 #
 ##################################################################
+security:
+  ignored: /**
+
+reportesfinancierosservice:
+  security:
+    enabled: false
 
 repository:
   ormFile: orm.xml
