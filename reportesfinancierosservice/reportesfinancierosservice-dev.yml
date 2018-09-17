@@ -35,9 +35,6 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
 
-security:
-  ignored: /**
-
 reportesfinancierosservice:
   security:
     enabled: false
