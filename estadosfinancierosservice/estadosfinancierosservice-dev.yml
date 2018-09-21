@@ -12,6 +12,8 @@ server:
 estadosfinancierosservice:
     consultaestadosfinancieros:
         wsdlLocation: http://192.168.21.192:8081/mockAnalisisRiesgos/services/mockAnalisisRiesgos?wsdl
+    security:
+      enabled: false
 
 spring:
   application:
