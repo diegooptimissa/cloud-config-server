@@ -9,7 +9,7 @@ clientesservice:
     consultaclientes:
         wsdlLocation: http://192.168.21.192:8081/mockAnalisisRiesgos/services/mockAnalisisRiesgos?wsdl
     security:
-        enable: false
+        enabled: false
         
 server:
   port: 8000
