@@ -32,6 +32,7 @@ spring:
     driver-class-name: "oracle.jdbc.OracleDriver"
 security:
  oauth2:
+   ignored: /**
   resource:
    userInfoUri: http://localhost:8901/users/user          
 
