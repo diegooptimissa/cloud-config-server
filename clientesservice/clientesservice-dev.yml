@@ -31,8 +31,8 @@ spring:
     password: "sirDev1"
     driver-class-name: "oracle.jdbc.OracleDriver"
 security:
+    ignored: /**
  oauth2:
-   ignored: /**
   resource:
    userInfoUri: http://localhost:8901/users/user          
 
