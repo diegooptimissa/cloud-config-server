@@ -1,0 +1,35 @@
+##################################################################
+#
+# Service: prospectosservice
+# Environment: Testing (QA)
+# 
+##################################################################
+server:
+  port: 8004
+  
+spring:
+  application:
+    name: prospectosservice
+  jpa:
+    show-sql: "true"
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.Oracle10gDialect"
+  datasource:
+    url: "jdbc:oracle:thin:@192.168.21.192:1523:sirtest"
+    username: "c##testing"
+    password: "testing1"
+    driver-class-name: "oracle.jdbc.OracleDriver"
+security:
+    oauth2:
+        resource:
+            userInfoUri: http://localhost:8901/users/user            
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
