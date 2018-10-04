@@ -4,6 +4,9 @@
 # Environment: Development (DEV)
 # 
 ##################################################################        
+prospectosservice:
+    security:
+        enabled: false
 server:
   port: 8004
 

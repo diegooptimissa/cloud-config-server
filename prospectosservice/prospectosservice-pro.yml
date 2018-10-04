@@ -4,6 +4,9 @@
 # Environment: Production (PRO)
 # 
 ##################################################################
+prospectosservice:
+    security:
+        enabled: false
 server:
   port: 8004
 
