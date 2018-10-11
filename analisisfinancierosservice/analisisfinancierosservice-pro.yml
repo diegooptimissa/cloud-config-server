@@ -18,8 +18,8 @@ spring:
     jpa:
         show-sql: "true"
         properties:
-        hibernate:
-            dialect: "org.hibernate.dialect.Oracle10gDialect"
+            hibernate:
+                dialect: "org.hibernate.dialect.Oracle10gDialect"
     datasource:
         url: "jdbc:oracle:thin:@192.168.21.192:1523:prodriesg"
         username: "sirProd"
