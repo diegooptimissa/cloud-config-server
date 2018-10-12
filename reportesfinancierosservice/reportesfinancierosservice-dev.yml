@@ -6,36 +6,38 @@
 ##################################################################
 
 repository:
-  ormFile: orm.xml
+    ormFile: orm.xml
 server:
-  port: 8003
+    port: 8003
 
 spring:
-  jpa:
-    show-sql: "false"
-    properties:
-      hibernate:
-        dialect: "org.hibernate.dialect.Oracle10gDialect"
-  datasource:
-    url: "jdbc:oracle:thin:@192.168.21.192:1523:devRiesgos"
-    username: "sirDev"
-    password: "sirDev1"
-    driver-class-name: "oracle.jdbc.OracleDriver"
+    jpa:
+        show-sql: "false"
+        properties:
+            hibernate:
+                dialect: "org.hibernate.dialect.Oracle10gDialect"
+                
+    datasource:
+        url: "jdbc:oracle:thin:@192.168.21.192:1523:devRiesgos"
+        username: "sirDev"
+        password: "sirDev1"
+        driver-class-name: "oracle.jdbc.OracleDriver"
+        
 security:
-  ignored: /**
-  oauth2:
-    resource:
-      userInfoUri: http://localhost:8901/users/user        
+    ignored: /**
+    oauth2:
+        resource:
+            userInfoUri: http://localhost:8901/users/user        
 
 eureka:
-  instance:
-    preferIpAddress: true
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+    instance:
+        preferIpAddress: true
+    client:
+        registerWithEureka: true
+        fetchRegistry: true
+        serviceUrl:
+            defaultZone: http://localhost:8761/eureka
 
 reportesfinancierosservice:
-  security:
-    enabled: false
+    security:
+        enabled: false

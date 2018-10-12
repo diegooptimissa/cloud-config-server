@@ -23,9 +23,14 @@ spring:
     driver-class-name: "oracle.jdbc.OracleDriver"
 
 security:
-  oauth2:
-    resource:
-      userInfoUri: http://localhost:8901/users/user   
+    ignored: /**
+    oauth2:
+        resource:
+            userInfoUri: http://localhost:8901/users/user    
+       
+reportesfinancierosservice:
+    security:
+        enabled: false
 
 eureka:
   instance:

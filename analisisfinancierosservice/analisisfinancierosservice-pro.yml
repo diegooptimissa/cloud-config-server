@@ -29,7 +29,11 @@ security:
     ignored: /**
     oauth2:
         resource:
-            userInfoUri: http://localhost:8901/users/user        
+            userInfoUri: http://localhost:8901/users/user     
+
+analisisfinancierosservice:
+  security:
+    enabled: false
 
 server:
     port: 8002
