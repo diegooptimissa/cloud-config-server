@@ -27,7 +27,10 @@ security:
     oauth2:
         resource:
             userInfoUri: http://localhost:8901/users/user    
-     
+       
+reportesfinancierosservice:
+    security:
+        enabled: false
 
 eureka:
     instance:
@@ -37,9 +40,5 @@ eureka:
         fetchRegistry: true
         serviceUrl:
             defaultZone: http://localhost:8761/eureka
-
-
-reportesfinancierosservice:
-    security:
-        enabled: false      
+      
 
