@@ -6,21 +6,21 @@
 ##################################################################
   
 repository:
-  ormFile: orm.xml
+    ormFile: orm.xml
 server:
-  port: 8003
+    port: 8003
 
 spring:
-  jpa:
-    show-sql: "true"
-    properties:
-      hibernate:
-        dialect: "org.hibernate.dialect.Oracle10gDialect"
-  datasource:
-    url: "jdbc:oracle:thin:@192.168.21.192:1523:prodriesg"
-    username: "sirProd"
-    password: "sirProd1"
-    driver-class-name: "oracle.jdbc.OracleDriver"
+    jpa:
+        show-sql: "true"
+        properties:
+            hibernate:
+                dialect: "org.hibernate.dialect.Oracle10gDialect"
+    datasource:
+        url: "jdbc:oracle:thin:@192.168.21.192:1523:prodriesg"
+        username: "sirProd"
+        password: "sirProd1"
+        driver-class-name: "oracle.jdbc.OracleDriver"
 
 security:
     ignored: /**
@@ -33,21 +33,12 @@ reportesfinancierosservice:
         enabled: false
 
 eureka:
-  instance:
-    preferIpAddress: true
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+    instance:
+        preferIpAddress: true
+    client:
+        registerWithEureka: true
+        fetchRegistry: true
+        serviceUrl:
+            defaultZone: http://localhost:8761/eureka
       
-ldap:
-  enabled: true
-  urls: ldap://ldap.forumsys.com:389/
-  base:
-    dn: dc=example,dc=com
-  username: cn=read-only-admin,dc=example,dc=com
-  password: password
-  user:
-    dn:
-      pattern: uid={0}
+
