@@ -5,42 +5,43 @@
 # 
 ##################################################################
 consultadetalleestadosfinancieros:
-  wsdlLocation: http://192.168.21.192:8081/mockAnalisisRiesgos/services/mockAnalisisRiesgos?wsdl
+    wsdlLocation: http://192.168.21.192:8081/mockAnalisisRiesgos/services/mockAnalisisRiesgos?wsdl
 
 repository:
-  ormFile: orm.xml
+    ormFile: orm.xml
   
 spring:
-  application:
-    name: analisisfinancierosservice
-  jpa:
-    show-sql: "true"
-    properties:
-      hibernate:
-        dialect: "org.hibernate.dialect.Oracle10gDialect"
-        format_sql: "true"
-  datasource:
-    url: "jdbc:oracle:thin:@192.168.21.192:1523:devRiesgos"
-    username: "sirDev"
-    password: "sirDev1"
-    driver-class-name: "oracle.jdbc.OracleDriver"
+    application:
+        name: analisisfinancierosservice
+    jpa:
+        show-sql: "true"
+        properties:
+            hibernate:
+                dialect: "org.hibernate.dialect.Oracle10gDialect"
+                format_sql: "true"
+    datasource:
+        url: "jdbc:oracle:thin:@192.168.21.192:1523:devRiesgos"
+        username: "sirDev"
+        password: "sirDev1"
+        driver-class-name: "oracle.jdbc.OracleDriver"
+    
 security:
- ignored: /**
- oauth2:
-  resource:
-   userInfoUri: http://localhost:8901/users/user       
+    ignored: /**
+    oauth2:
+        resource:
+            userInfoUri: http://localhost:8901/users/user       
    
 server:
-  port: 8002
+    port: 8002
   
 eureka:
-  instance:
-    preferIpAddress: true
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+    instance:
+        preferIpAddress: true
+    client:
+        registerWithEureka: true
+        fetchRegistry: true
+        serviceUrl:
+            defaultZone: http://localhost:8761/eureka
       
 ldap:
   serverUrl: "ldap://192.168.21.192:389"
