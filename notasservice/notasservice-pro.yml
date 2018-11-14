@@ -21,7 +21,7 @@ spring:
   datasource:
     url: "jdbc:oracle:thin:@192.168.21.192:1523:prodriesg"
     username: "sirProd"
-    password: "sirProd1"
+    password: "sirProd2"
     driver-class-name: "oracle.jdbc.OracleDriver"
 
 security:
