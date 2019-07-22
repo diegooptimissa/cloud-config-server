@@ -28,7 +28,6 @@ spring:
         username: "RIESGOS"
         password: "sirProd1"
         driver-class-name: "oracle.jdbc.OracleDriver"
-    driver-class-name: "oracle.jdbc.OracleDriver"
     
 security:
  ignored: /**
